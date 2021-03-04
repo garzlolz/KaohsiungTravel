@@ -1,0 +1,97 @@
+body{
+    margin: 0px 0px;
+}
+.header{
+    background-image: url(../media/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 400px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.title{
+    position: relative 4.3% 37%;
+    padding-top: 44px;
+    margin-top: 0px;
+    font-size: 44px;
+    color: white;
+}
+#option{
+    position: relative 11% 27.2% 5.2% 28.6%;
+    width: 44.1%;
+    height: 15%;
+    font-size: 19px;
+    background-color: rgba(247, 237, 211,0.7);
+    border: rgb(243, 148, 93) 2px solid;
+    color: white;
+    border-radius: 8px;
+    margin-top: 4.7%;
+}
+#option option{
+    background-color: transparent;
+    color: black;
+    border-radius: 8px;
+}
+.bar{
+    width: 78.1%;
+    height: 100px;
+    background-color: white;
+    box-shadow:0px 0px 30px rgb(153, 146, 146);
+    border-radius: 10px;
+    margin: 80px auto;
+}
+
+.hotspot{
+    flex-wrap: nowrap;
+}
+
+.hots{
+
+    font-size: 20px;
+    width: auto;
+    padding: 10px 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    color: white;
+}
+
+.godown{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color: aqua;
+    width: 45.3%;
+    height: 273px;
+    margin: 10px auto;
+    
+}
+.content{
+    text-align: center;
+}
+.spot{
+    margin-top: 70px;
+    font-size: 36px;
+    color: #8A82CC;
+    margin-bottom: 10px;
+}
+
+.footer{
+    position: relative;
+    top: 90%;
+    width: 100%;
+    height: 90px;
+    background-color: #559AC8;
+    margin-top: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
