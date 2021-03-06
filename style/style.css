@@ -43,7 +43,9 @@ body{
 }
 
 .hotspot{
-    flex-wrap: nowrap;
+    display: block;
+    flex-wrap: wrap;
+
 }
 
 .hots{
@@ -52,7 +54,6 @@ body{
     width: auto;
     padding: 10px 30px;
     margin-right: 30px;
-    margin-bottom: 40px;
     border-radius: 8px;
     color: white;
 }
