@@ -70,11 +70,15 @@ body{
 }
 
 .box{
-    background-color: aqua;
+    background-color: rgba(247, 228, 147, 0.959);
     width: 45.3%;
-    height: 273px;
+    height: 450px;
     margin: 10px auto;
+    text-align: left;
     
+}
+.info{
+    margin-left :20px; ;
 }
 .content{
     text-align: center;

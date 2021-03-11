@@ -1569,18 +1569,29 @@ var  data =
 };
 var dataResult  = data.result.records;
 var Select_Data = document.querySelector('#option');
+var Spot = document.querySelector('.spot');
+var Content = document.querySelector('.container');
 var str = '';
 
+Select_Data.addEventListener('change',Change,false);
 
-for(var i=0;i<=dataResult.length;i++){
-    
-    if(dataResult[i].Zone == dataResult[i+1].Zone)
-      {i++}
-    else{
-      str += '<option data-index='+i+'>'+dataResult[i].Zone+'</option>';
-      Select_Data.innerHTML  = str;
-      console.log(dataResult[i].Zone);
-    };
-};
+function Change(){
+  var str = '';
+  Spot.textContent = Select_Data.value;
+  for(var i=0;i<dataResult.length;i++){
+    if(Select_Data.value == dataResult[i].Zone){
+     // str+='<div class="box" data-index='+i+'>'+dataResult[i].Name+'</div>';
 
-var  SelectList = document.querySelector('#option');
+     str+= '<div class="box"><img src="'+dataResult[i].Picture1+'" width="100%" height="70%">'+
+                '<div class="info">'+
+                '<div><img src="../media/icons_clock.png"><span>'+dataResult[i].Opentime+'</span></div>'+
+                '<div><img src="../media/icons_pin.png"><span>'+dataResult[i].Add+'</span></div>'+
+                '<div><img src="../media/icons_phone.png" alt="error"><span>'+dataResult[i].Tel+'</span></div>'+
+                '</div></div>';
+      Content.innerHTML = str;
+      console.log(dataResult[i].Name);
+    }
+  }
+}
+
+
