@@ -70,12 +70,12 @@ body{
 }
 
 .box{
-    background-color: rgba(247, 228, 147, 0.959);
+    background-color: rgba(166, 218, 248, 0.74);
     width: 45.3%;
-    height: 400px;
+    height: 350px;
     margin: 10px auto;
     text-align: left;
-    
+    border-radius: 10px;   
 }
 .info{
     margin-left :20px; ;
@@ -99,4 +99,8 @@ body{
     margin-top: 60px;
     text-align: center;
     padding-top: 10px;
+}
+
+.spotname{
+    text-align: right;
 }
