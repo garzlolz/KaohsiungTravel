@@ -1570,17 +1570,17 @@ var  data =
 var dataResult  = data.result.records;
 var Select_Data = document.querySelector('#option');
 var str = '';
-for(var i=0;i<dataResult.length;i++){
 
 
-  if(dataResult[i].Zone != dataResult[i+1].Zone){
-    console.log(dataResult[i].Zone);
-    str += '<option>'+dataResult[i].Zone+'</option>';
-    Select_Data.innerHTML  = str;
-  }
-  else if(i-1 == dataResult.length){
-    break;
-  }
-}
+for(var i=0;i<=dataResult.length;i++){
+    
+    if(dataResult[i].Zone == dataResult[i+1].Zone)
+      {i++}
+    else{
+      str += '<option data-index='+i+'>'+dataResult[i].Zone+'</option>';
+      Select_Data.innerHTML  = str;
+      console.log(dataResult[i].Zone);
+    };
+};
 
 var  SelectList = document.querySelector('#option');
