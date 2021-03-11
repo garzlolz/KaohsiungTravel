@@ -1582,11 +1582,11 @@ function Change(){
     if(Select_Data.value == dataResult[i].Zone){
      // str+='<div class="box" data-index='+i+'>'+dataResult[i].Name+'</div>';
 
-     str+= '<div class="box"><span class ="spotname"><h1>'+dataResult[i].Name+'</h1></span><img src="'+dataResult[i].Picture1+'" width="100%" height="70%">'+
+     str+= '<div class="box"><img src="'+dataResult[i].Picture1+'" width="100%" height="70%">'+
                 '<div class="info">'+
                   '<div><img src="media/icons_clock.png"><span>'+dataResult[i].Opentime+'</span></div>'+
                   '<div><img src="media/icons_pin.png"><span>'+dataResult[i].Add+'</span></div>'+
-                  '<div><img src="media/icons_phone.png" alt="error"><span>'+dataResult[i].Tel+'</span></div>'+
+                  '<div><img src="media/icons_phone.png" alt="error"><span>'+dataResult[i].Tel+'<p class="spotname">'+dataResult[i].Name+'</p></span></div>'+
                 '</div>'+
                 '</div>';
       Content.innerHTML = str;
