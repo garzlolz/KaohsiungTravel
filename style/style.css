@@ -70,15 +70,17 @@ body{
 }
 
 .box{
-    background-color: rgba(166, 218, 248, 0.74);
+    background-color: rgba(202, 232, 250, 0.74);
     width: 45.3%;
     height: 350px;
     margin: 10px auto;
     text-align: left;
     border-radius: 10px;   
 }
+
 .info{
     margin-left :20px; ;
+    font-size: larger;
 }
 .content{
     text-align: center;
@@ -102,5 +104,10 @@ body{
 }
 
 .spotname{
-    text-align: right;
+    margin-left: 250px;
+}
+
+#noInfo{
+    margin: 10px 47% 10px auto;
+
 }

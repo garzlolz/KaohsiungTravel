@@ -1573,6 +1573,8 @@ var Spot = document.querySelector('.spot');
 var Content = document.querySelector('.container');
 var str = '';
 
+
+
 Select_Data.addEventListener('change',Change,false);
 
 function Change(){
@@ -1586,7 +1588,7 @@ function Change(){
                 '<div class="info">'+
                   '<div><img src="media/icons_clock.png"><span>'+dataResult[i].Opentime+'</span></div>'+
                   '<div><img src="media/icons_pin.png"><span>'+dataResult[i].Add+'</span></div>'+
-                  '<div><img src="media/icons_phone.png" alt="error"><span>'+dataResult[i].Tel+'<p class="spotname">'+dataResult[i].Name+'</p></span></div>'+
+                  '<div><img src="media/icons_phone.png" alt="error"><span>'+dataResult[i].Tel+'<span class="spotname">'+dataResult[i].Name+'</span></span></div>'+
                 '</div>'+
                 '</div>';
       Content.innerHTML = str;
