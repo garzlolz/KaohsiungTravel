@@ -1595,6 +1595,4 @@ function Change(){
       console.log(dataResult[i].Name);
     }
   }
-}
-
-
+};
